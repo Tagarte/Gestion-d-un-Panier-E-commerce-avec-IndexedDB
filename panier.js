@@ -70,7 +70,7 @@ function displayCartItems(pr) {
 // Tâche 9 : Implémentation des fonctions de mise à jour et de suppression des articles du panier 
 
 function updateQuantity(itemId, newQuantity) {
-    const dbRequest = indexedDB.open("CoffeeShopDB", 1);
+    const dbRequest = indexedDB.open("CoffeeShopDB", 2);
     dbRequest.onsuccess = (event) => {
         const db = event.target.result;
         const transaction = db.transaction("cart", "readwrite");
@@ -92,7 +92,7 @@ function updateQuantity(itemId, newQuantity) {
 }
 
 function removeFromCart(itemId) {
-    const dbRequest = indexedDB.open("CoffeeShopDB", 1);
+    const dbRequest = indexedDB.open("CoffeeShopDB", 2);
     dbRequest.onsuccess = (event) => {
         const db = event.target.result;
         const transaction = db.transaction("cart", "readwrite");
