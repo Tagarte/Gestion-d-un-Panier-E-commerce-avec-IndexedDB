@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="panier.css">
+</head>
+<body>
+    <h1>Mon Panier</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>PRODUIT</th>
+                <th>PRIX</th>
+                <th>QUANTITÉ</th>
+                <th>TOTAL</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+        </tbody>
+    </table>
+
+    <div id="total-container">
+        <span style="margin-top: 4px;">Total : </span>
+        <span id="total-price"> 0 dh</span>
+    </div>
+
+    <div class="return-link">
+        <a href="shop.html">Retour aux produits</a>
+    </div>
+
+    <script src="panier.js"></script>
+</body>
+</html>
